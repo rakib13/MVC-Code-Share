@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyFirstMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -41,6 +42,13 @@ namespace MyFirstMVC.Controllers
 
         public ActionResult getView()
         {
+            Employee emp = new Employee();
+            emp.FirstName = "Rakib";
+            emp.LastName = "Omar";
+            emp.Salary = 1700;
+
+            ViewData["Employee"] = emp;
+
             return View("MyView");
         }
 

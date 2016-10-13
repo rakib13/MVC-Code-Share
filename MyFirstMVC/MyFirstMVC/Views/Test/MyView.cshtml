@@ -1,6 +1,7 @@
 ﻿
 @{
-    Layout = null;
+    MyFirstMVC.Models.Employee emp = (MyFirstMVC.Models.Employee)
+    ViewData["Employee"];
 }
 
 <!DOCTYPE html>
@@ -11,8 +12,10 @@
     <title>MyView</title>
 </head>
 <body>
-    <div> 
-        This is a test view
+    <div>
+        <b>Employee Details </b><br />
+        Employee Name : @emp. FirstName@emp. LastName <br />
+        Employee Salary: @emp. Salary. ToString("C")
     </div>
 </body>
 </html>
