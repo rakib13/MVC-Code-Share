@@ -30,7 +30,7 @@ namespace MyFirstMVC.Controllers
             customer.name = "Rakib";
             customer.age = 26;
 
-            return customer.name + " is "+ customer.age + " years old.";
+            return customer.name + " is "+ customer.age + " years old & the Random value is ";
         }
 
         [NonAction]
@@ -42,6 +42,19 @@ namespace MyFirstMVC.Controllers
         public ActionResult getView()
         {
             return View("MyView");
+        }
+
+        public ActionResult getSelectedView()
+        {
+            Random rnd = new Random();
+            if (rnd.Next(1, 10) > 5)
+            {
+                return View("MaxView");
+            }
+            else
+            {
+                return View("MinView");
+            }
         }
 	}
 
