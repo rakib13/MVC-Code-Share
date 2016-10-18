@@ -1,0 +1,26 @@
+﻿@using MyFirstMVC.ViewModels;
+
+@model EmployeeViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Get Employee View by ViewModel</title>
+</head>
+<body>
+    <div> 
+        <h3>Hi @Model.UserName</h3>
+        <b>Employee Detales:</b><br/>
+        <b>Employee Name : @Model.employeeName</b><br />
+        <span style="background-color:@Model.SalaryColor">
+            Employee Salary : @Model.Salary
+        </span>
+    </div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-﻿
+﻿@model MyFirstMVC.Models.Employee
 @{
     MyFirstMVC.Models.Employee emp = (MyFirstMVC.Models.Employee)
     ViewData["Employee"];
@@ -14,8 +14,14 @@
 <body>
     <div>
         <b>Employee Details </b><br />
-        Employee Name : @emp. FirstName@emp. LastName <br />
-        Employee Salary: @emp. Salary. ToString("C")
+        Employee Name : @(emp.FirstName+" "+emp.LastName) <br />
+        Employee Salary: @emp.Salary.ToString("C")<br/>
+
+        <!-- This is for the strongly typed data model to get data from model to view-->
+        <b>Employee detail from Stronglytyped View</b><br/>
+        The Employee is @Model.FirstName @Model.LastName <br/>
+        He got the salary of <b> @Model.Salary </b> taka!
+
     </div>
 </body>
 </html>
