@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstMVC", "MyFirstMVC\My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstMVC.Tests", "MyFirstMVC.Tests\MyFirstMVC.Tests.csproj", "{080C4419-0FFB-4280-8D5B-B652995CB4A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCwithDB", "MVCwithDB\MVCwithDB.csproj", "{45E0EA32-0DC8-4A01-A6B5-BA41DA94D849}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{080C4419-0FFB-4280-8D5B-B652995CB4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{080C4419-0FFB-4280-8D5B-B652995CB4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{080C4419-0FFB-4280-8D5B-B652995CB4A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45E0EA32-0DC8-4A01-A6B5-BA41DA94D849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45E0EA32-0DC8-4A01-A6B5-BA41DA94D849}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45E0EA32-0DC8-4A01-A6B5-BA41DA94D849}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45E0EA32-0DC8-4A01-A6B5-BA41DA94D849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
