@@ -10,9 +10,24 @@ namespace MyFirstMVC.Controllers
     {
         //
         // GET: /Test/
-        public ActionResult Index()
+        public string getMessage()
         {
-            return View();
+            return "Hello World!!!";
+        }
+
+        public Customer getCustomerInfo()
+        {
+            Customer customer = new Customer();
+            customer.name = "Rakib";
+            customer.age = 26;
+
+            return customer;
         }
 	}
+
+    public class Customer
+    {
+        public string name { get; set; }
+        public int age { get; set; }
+    }
 }
